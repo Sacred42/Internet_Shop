@@ -1,0 +1,50 @@
+html {
+   font-size: 30px;
+}
+ul {
+   margin: 0;
+   padding: 0;
+}
+
+header {
+   font-size: 0.8rem;
+   display: flex; 
+   justify-content: space-between;
+   padding: 1rem;
+}
+
+.links-header * {
+ padding-right: 0.8rem;
+}
+
+.drop-down-menu ul {
+ font-size: 0.69rem ;
+ display: flex;
+ justify-content: space-around;
+
+}
+
+.drop-down-menu ul > li {
+   list-style-type: none;
+   padding: 0.55rem;
+   border: 0.07rem #000000 solid;
+}
+
+.drop-down-menu ul > li:first-child {
+   border-left: 0.1rem  #000000 solid;
+}
+.drop-down-menu ul > li:last-child {
+   border-right: 0.1rem  #000000 solid;
+}
+
+.advertising{
+   text-align: center;
+   background-color: green;
+   height: 2.5rem;
+}
+.slider {
+   text-align: center;
+   background-color: yellow;
+   height: 5rem;
+}
+
