@@ -10,7 +10,6 @@ const isAuth = (req, res, next) =>{
             return res.status(401).send({ message: 'невалидный токен!' });
           }
           req.user = decode;
-          console.log('nice');
           next();
           return;
       })

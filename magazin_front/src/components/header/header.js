@@ -22,8 +22,8 @@ const Header = () =>{
         </ul> : 
         <ul className="links-header">
         <li><Link to="/productcart">Cart</Link></li>
-        <li><Link to="/signin">Sign in</Link></li>
-        <li><Link to="/signup">Sign up</Link></li>
+        <li><Link to="/signin">Sign up</Link></li>
+        <li><Link to="/signup">Sign in</Link></li>
         
       </ul>}
       

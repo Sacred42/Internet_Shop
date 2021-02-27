@@ -1,0 +1,58 @@
+@import "./mixins/shadow.less";
+@import "./mixins/borderUnderButton.less";
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+// хидер
+header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-family: Palatino, URW Palladio L, serif;  
+    background-color: rgb(236, 241, 241);
+    height: 80px;
+    padding: 20px 30px 30px;
+    .shadow(5px, 3px, 6px, 8px);
+    
+    // лого
+    div{
+        a{
+            color: black;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+    // список
+    ul{
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      width: 400px;
+      li{
+        
+         >a{ 
+             display: inline-block;
+             color: black;
+             position: relative;
+             &:hover{
+                .getAnimation;
+             }
+             &:after{
+                .elementAfter
+             }
+             &:hover::after{
+                .getAnimationAfter;
+                
+             }
+         } 
+      }
+    }
+}
